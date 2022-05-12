@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Employee {
+  int32 id = 1; // int32 is the type of the id (32 bits) 1 is not the default value, is the number of the sequentially property
+  string name = 2;
+  float salary = 3;
+}
+
+message Employees {
+  repeated Employee employees = 1;
+}
